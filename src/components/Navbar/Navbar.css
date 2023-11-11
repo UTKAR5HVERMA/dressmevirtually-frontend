@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+:root {
+  --charcolBlack: #101820;
+  --primaryColoraText: #FEE715;
+  --primaryColorlight: #00FFFF;
+  --inputText: hsl(330,12%, 97%);
+  --cardColor: hsl(300, 3%,94%);
+  --greyText: hsl(0,0%,51%);
+  --formcolor: #F9E795;
+  --bgColor: hsl(0,0%, 100%);
+  --whiteColor: hsl(0,0%, 100%);
+  --biggestFontSize: 2.5rem;
+  --h1Fontsize: 2rem;
+  --h2Fontsize: 1.25rem;
+  --h3Fontsize: 1rem;
+  --normalFontsize: 0.938rem;
+  --smallFontsize: 0.813rem;
+  --smallestFontsize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  position: fixed;
+  border-bottom: 1.5px solid var(--primaryColoraText);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+.navBar .logodm {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  height: 50px;
+}
+.navBar .logodm span {
+  color: var(--charcolBlack);
+  font-size: var(--h3Fontsize);
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .navBar .menu {
+    position: absolute;
+    width: 70%;
+    top: -100rem;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    background: rgb(7, 6, 7);
+    padding: 2rem;
+    border-radius: 10px;
+    transition: 0.8s ease-in-out;
+  }
+  .navBar .menu li {
+    color: var(--primaryColoraText);
+    font-size: var(--h3Fontsize);
+    font-weight: 500;
+    padding: 1rem 0;
+    text-align: center;
+    cursor: pointer;
+  }
+  .navBar .menu li:hover {
+    color: var(--primaryColorlight);
+  }
+}
+.navBar .signUpBtn {
+  font-size: var(--h3Fontsize);
+  background: var(--primaryColoraText);
+  color: var(--charcolBlack);
+}
+.navBar .signUpBtn:hover {
+  color: var(--charcolBlack);
+  background: var(--primaryColorlight);
+}
+.navBar .menuicon, .navBar .closeicon {
+  font-size: var(--h1Fontsize);
+  color: var(--primaryColoraText);
+}
+.navBar .menuicon:hover, .navBar .closeicon:hover {
+  color: var(--primaryColorlight);
+}
+.navBar .closeicon {
+  position: absolute;
+  color: var(--primaryColoraText);
+  bottom: -30px;
+  right: 50%;
+  left: 50%;
+  color: var(--charcolBlack);
+  transform: translate(-50%);
+}
+.navBar .showNavbar {
+  top: 8rem;
+}/*# sourceMappingURL=Navbar.css.map */
