@@ -3,6 +3,7 @@ import './App.css'
 // import About from './components/About/About'
 // import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
+import YourComponent from './components/Home/YourComponent'
 // import { Canvas } from '@react-three/fiber'
 // import Middle from './components/Middle/Middle'
 import Navbar from './components/Navbar/Navbar'
@@ -14,7 +15,7 @@ function App() {
    <div>
     <Navbar/>
     <Home/>
-  {/* <YourComponent/> */}
+  <YourComponent/>
     {/* <Middle/>
     <AIvirtuallworld/>
     <Footer/>
