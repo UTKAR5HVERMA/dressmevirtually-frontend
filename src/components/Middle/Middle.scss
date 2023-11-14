@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap');
+
+root{
+    
+    --charcolBlack: #101820;
+    --primaryColoraText: #FEE715;
+    --primaryColorlight:  #00FFFF;
+    --inputText: hsl(330,12%, 97%);
+    --cardColor: hsl(300, 3%,94%);
+    --greyText: hsl(0,0%,51%);
+    --formcolor: #F9E795;
+    --bgColor: hsl(0,0%, 100%);
+    --whiteColor: hsl(0,0%, 100%);
+    
+    --biggestFontSize: 2.5rem;
+    --h1Fontsize: 2rem;
+    --h2Fontsize: 1.25rem;
+    --h3Fontsize: 1rem;
+    --normalFontsize: 0.938rem;
+    --smallFontsize: 0.813rem;
+    --smallestFontsize: 0.75rem;
+    --borderRadius: 3rem;
+}
+
+.vrAdDesign{
+    position: relative;
+    height: 100%;
+    top: 30%;
+    bottom: 50%;
+    color: var(--primaryColoraText);
+    padding: 0 1.3rem;
+    background-color: black;
+    // position: relative;
+    .text1{
+        font-size: var(--biggestFontSize);
+        font-weight:900;
+        // color:var(--primaryColoraText);
+    }
+    p{  
+        padding: -2rem 0;
+        font-size: var(--normalFontsize);
+        font-weight: 500;
+    }
+    
+    .product-box {
+        
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5rem 2rem ;
+    border : 1.5px
+    solid var(--primaryColoraText);
+    background: var(--charcolBlack);
+    backdrop-filter: blur(5px);
+        max-width: 500px; 
+        height: 200px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        margin: 1px ; /* Center the box horizontally */
+        text-align: left;
+    }
+    
+    @media screen and (max-width: 767px) {
+        .product-box {
+        margin: 20px; /* Adjust margin for smaller screens */
+    }
+}
+}
+  

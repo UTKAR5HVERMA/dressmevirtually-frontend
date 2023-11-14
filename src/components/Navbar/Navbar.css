@@ -90,7 +90,7 @@
   bottom: -30px;
   right: 50%;
   left: 50%;
-  color: var(--charcolBlack);
+  color: var(--primaryColoraText);
   transform: translate(-50%);
 }
 .navBar .showNavbar {

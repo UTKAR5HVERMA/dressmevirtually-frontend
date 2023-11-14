@@ -64,37 +64,4 @@ root {
 }
 .selectionText .btn:hover {
   background-color: #00FFFF;
-}
-
-.vrAdDesign {
-  position: relative;
-  height: 100%;
-  top: 30%;
-  bottom: 50%;
-  color: var(--primaryColoraText);
-  padding: 0 1.3rem;
-  background-color: black;
-}
-.vrAdDesign .text1 {
-  font-size: var(--biggestFontSize);
-  font-weight: 900;
-}
-.vrAdDesign p {
-  padding: 1rem 0;
-  font-size: var(--normalFontsize);
-  font-weight: 500;
-}
-.vrAdDesign .product-box {
-  width: 100%; /* Use a percentage to make it responsive */
-  max-width: 500px; /* Set a maximum width if needed */
-  height: 400px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  margin: 1px; /* Center the box horizontally */
-  text-align: left;
-}
-@media screen and (max-width: 767px) {
-  .vrAdDesign .product-box {
-    margin: 20px; /* Adjust margin for smaller screens */
-  }
 }/*# sourceMappingURL=Home.css.map */
