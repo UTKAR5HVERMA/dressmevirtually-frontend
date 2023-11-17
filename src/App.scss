@@ -31,17 +31,16 @@ root{
 body{
     background: var(--bgColor);
 
-
+    
 }
 .flex{
-    display: flex;
-    align-items: center;
-}
+        display: flex;
+        align-items: center;
+    }
 .grid{
     display: grid;
     align-items: center;
     gap: 1.5rem;
-
 }
 p{
     font-size: var(--smallFontsize);
@@ -70,13 +69,13 @@ img , video{
     border: none;
     outline: none;
     cursor: pointer;
-    background-color: var(--charcolBlack);
+    background-color: var(--primaryColoraText);
     border-radius: var(--borderRadius);
     padding: 0.8rem 2rem;
-    color: var(--primaryColoraText)
+    color: var(--charcolBlack)
 }
 
-&:hover{
+:hover{
     transition: .3s ease;
 }
 

@@ -56,6 +56,7 @@ root {
 }
 @media screen and (max-width: 767px) {
   .vrAdDesign .product-box {
-    margin: 20px; /* Adjust margin for smaller screens */
+    padding-top: 5px;
+    margin: 1px;
   }
 }/*# sourceMappingURL=Middle.css.map */
