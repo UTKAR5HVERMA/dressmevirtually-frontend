@@ -11,7 +11,10 @@ const Footer= ()=> {
             <div className="footerLogo">
             <img className='logodm' src="/Logo/logoinyellow.png"alt="" />          
             </div>
-              <h2 className='logoName'>Dress Me Virtually</h2>
+              <div>
+                <h2 className='logoName'>Dress Me Virtually</h2>
+                </div>
+                </div>
             <div className='socials flex'>
               <ImFacebook className='icon'/>
               <BsTwitter className='icon'/>
@@ -57,8 +60,8 @@ const Footer= ()=> {
                   <span className='phone'>+111111111</span>
                   <span className='email'>medicaps@gmail.com</span>
                 
+       
               </div>
-          </div>
         </div>
       </div>
     )

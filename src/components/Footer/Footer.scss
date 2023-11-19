@@ -40,11 +40,12 @@
                 cursor:pointer;
                 align-items: center;
                 justify-content: center;
-                // padding-bottom: .5rem;
+                padding-bottom: .5rem;
             }    
+            
             h2{
-                margin-top: 30px;
-                font-weight: 500;
+            padding-bottom: 1rem;
+            font-weight: 500;
             }
             img.logodm{
                 display: flex;
@@ -55,6 +56,44 @@
             }
                 
         }
+        .socials{
+            gap: .5rem;
+            align-items: center;
+            margin: auto;
+            justify-content: center;    
+            .icon{
+                font-size: 40px;
+                background-color: var(--primaryColoraText);
+                border-radius: 50%;
+                padding: 8px;
+                color: var(--whiteColor);
+                &:hover{
+                    background: var(--primaryColorlight);
+                }    
+            }    
+        }
+        .footerLinks{
+            display: grid;
+            row-gap: .2rem;
+            .linkTitle{
+                padding-bottom: .5rem;
+                color: black;
+            font-weight: 700;
+            
+                 }
+        li{
+            &:hover{
+                transform: translate(10px);
+                a{   
+                    color: black;
+                }       
+            }
+        }
+        a , .phone, .email{
+            color: black;
+            font-size: 13px;
+            font-weight: 500;
+        }
     }
-
-}
+    }
+    }
