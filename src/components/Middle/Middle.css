@@ -2,6 +2,7 @@
 root {
   --charcolBlack: #101820;
   --primaryColoraText: #FEE715;
+  --primaryColorBacklight: #fee71550;
   --primaryColorlight: #00FFFF;
   --inputText: hsl(330,12%, 97%);
   --cardColor: hsl(300, 3%,94%);
@@ -24,16 +25,21 @@ root {
   height: 100%;
   top: 30%;
   bottom: 50%;
-  color: var(--primaryColoraText);
+  color: black;
   padding: 0 1.3rem;
-  background-color: black;
 }
 .vrAdDesign .text1 {
-  font-size: var(--biggestFontSize);
-  font-weight: 900;
+  background-color: var(--primaryColorBacklight);
+  padding: 1rem;
+  margin: 1rem -1rem 1rem -1rem;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .vrAdDesign p {
-  padding: -2rem 0;
+  background-color: var(--cardColor);
+  padding: 2rem;
+  border-radius: 0 0 20px 20px;
   font-size: var(--normalFontsize);
   font-weight: 500;
 }
@@ -43,7 +49,8 @@ root {
   justify-content: space-between;
   width: 100%;
   padding: 1.5rem 2rem;
-  border: 1.5px solid var(--primaryColoraText);
+  border: 2px solid var(--primaryColoraText);
+  border-radius: 20px 20px 0 0;
   background: var(--charcolBlack);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -52,7 +59,6 @@ root {
   padding-top: 1px;
   padding-bottom: 1px;
   margin: 1px; /* Center the box horizontally */
-  text-align: left;
 }
 @media screen and (max-width: 767px) {
   .vrAdDesign .product-box {

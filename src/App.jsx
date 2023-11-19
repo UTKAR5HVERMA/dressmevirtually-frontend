@@ -1,6 +1,6 @@
 // import AIvirtuallworld from './components/AI virtuall world/AIvirtuallworld'
 // import About from './components/About/About'
-// import Footer from './components/Footer/Footer'
+import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
 
 import Questions from './components/Questions/Questions'
@@ -20,8 +20,8 @@ function App() {
     <Middle/>
     <Signup/>
     <Questions/>
+    <Footer/>
     {/* <Reviews/> */}
-    {/* <Footer/> */}
     {/* <AIvirtuallworld/>
     <Contact/>
     <About/> */}

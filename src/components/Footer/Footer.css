@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
 :root {
   --charcolBlack: #101820;
+  --charcolBlacklight: #23282c8f;
   --primaryColoraText: #FEE715;
+  --primaryColorBacklight: #fee71550;
   --primaryColorlight: #00FFFF;
   --inputText: hsl(330,12%, 97%);
   --cardColor: hsl(300, 3%,94%);
@@ -19,6 +21,31 @@
   --borderRadius: 3rem;
 }
 
-h1 {
-  font-size: 100px;
+.footer {
+  background-color: var(--cardColor);
+  padding: 2rem 0;
+}
+.footer .secContainer {
+  gap: 1.5rem;
+  text-align: center;
+  align-items: flex-start;
+}
+.footer .secContainer .logoDiv .footerLogo {
+  display: flex;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.footer .secContainer .logoDiv h2 {
+  margin-top: 30px;
+  font-weight: 500;
+}
+.footer .secContainer .logoDiv img.logodm {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
 }/*# sourceMappingURL=Footer.css.map */
