@@ -125,6 +125,7 @@
 
 .navBar.scrolled { 
     z-index:-1000;
+    transform: translateY(-100%);
     transition: ease-in;
   }
 
