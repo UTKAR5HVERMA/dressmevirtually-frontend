@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+// import contact from '../contact/Contact.jsx'
 import {ImFacebook} from "react-icons/im"
 import {BsTwitter} from "react-icons/bs"
 import {AiFillInstagram} from "react-icons/ai"
@@ -34,7 +35,7 @@ const Footer= ()=> {
                     <a href="#">About</a>
                   </li>
                   <li>
-                    <a href="#">Contact</a>
+                    <a href='#'>Contact</a>
                   </li>
               </div>
               <div className='footerLinks'>

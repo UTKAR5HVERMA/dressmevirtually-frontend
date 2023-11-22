@@ -41,39 +41,197 @@ root{
         font-weight:600;
         // color:var(--primaryColoraText);
     }
-    p{  
-        background-color: var(--cardColor);
-        padding: 2rem ;
+    .grid-container{
+
+        p{  
+          
+        padding: 1rem ;
         border-radius: 0 0 20px 20px;
         font-size: var(--normalFontsize);
         font-weight: 500;
     }
     
     .product-box {
-        
+    overflow: hidden;
     display: flex;
     align-items:center ;
     justify-content: space-between;
     width: 100%;
-    padding: 1.5rem 2rem ;
-    border : 2px
-    solid var(--primaryColoraText);   
-    border-radius: 20px 20px 0 0;
-    background: var(--charcolBlack);
+    // padding: 1.5rem 2rem ;
+    // border : 2px
+    // solid var(--primaryColoraText);   
+    // border-radius: 20px 20px 0 0;
+    // background: var(--charcolBlack);
     backdrop-filter: blur(5px);
+    max-width: 500px; 
+    height: 200px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 1px ; /* Center the box horizontally */
+    
+}
+.product-box-video {
+    
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    width: 100%;
+    // border : 2px
+    // solid var(--primaryColoraText);   
+    border-radius: 20px 20px 0 0;
+    // background: var(--cardColor);
+    backdrop-filter: blur(5px);
+    max-width: 500px; 
+// height: 200px;
+padding-top: 1px;
+padding-bottom: 1px;
+margin: 1px ; /* Center the box horizontally */
+
+}
+video{
+padding-top: 5px;
+width: 100%;
+height: auto;
+margin-top: 10px;
+margin-bottom:1px;
+border-radius: 20px 20px 0 0;
+}    
+
+}
+
+}
+@media screen and (max-width: 767px) {
+    .grid-container{
+
+        .product-box {
+            
+            padding-top: 5px;
+            margin: 1px;
+        }
+        p{
+
+            background-color: var(--cardColor);   
+        }
+    }
+    
+
+}
+@media screen and (max-width: 767px) {
+.vrAdDesign{
+
+    .grid-container{
+        
+        .product-box-video {
+            
+            padding-top: 5px;
+            margin: 1px;
+        }
+    }
+}    
+    
+}
+
+
+@media screen and (min-width: 768px){
+    .vrAdDesign{
+        // position: relative;
+        // grid-template-columns: auto auto auto;
+        .text1{
+        text-align: center;
+        justify-content: center;
+        background-color: var(--primaryColorBacklight);
+        padding: 1rem ;
+        // width:100 ;
+        margin: 1rem -rem 1rem -1rem;
+        border-radius:30px ;    
+        font-size: 1.5rem;
+        font-weight:600;
+        
+        
+    }
+    .grid-container{
+
+        display:inline-grid;
+        grid-template-columns: 50% 50%;
+        gap: 1px;
+        .product-box{
+            // display:flex;0
+            align-items:center ;
+            justify-content: space-between;
+            width: 100%;
+            border-radius: 20px 20px 20px 20px;
+            max-width: 500px; 
+            height: 200px;
+            padding-top: 5px;
+            padding-bottom: 1px;
+            margin: 1px ; /* Center the box horizontally */
+            
+        }
+        p{
+        padding-left: 2rem ;
+        margin-left: 1px ;
+        text-align: center;
+        border-radius: 20px;
+        font-size: var(--h2Fontsize);
+        font-weight: 500;
+    }
+    
+    .product-box-video{
+        // overflow: hidden;
+        display: flex;
+        align-items:center ;
+        justify-content: space-between;
+        width: 100%;
+        // border : 2px
+        // solid var(--primaryColoraText);   
+        // border-radius: 20px 20px 0 0;
+        // background: var(--cardColor);
+        backdrop-filter: blur(5px);
         max-width: 500px; 
         height: 200px;
         padding-top: 1px;
         padding-bottom: 1px;
         margin: 1px ; /* Center the box horizontally */
-    }
-    
-    @media screen and (max-width: 767px) {
-        .product-box {
                 
-        padding-top: 5px;
-        margin: 1px;
+        
+    }
+    video{
+        padding-top: 4px;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom:1px;
+        border-radius: 20px;
+    }    
+}
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+    .vrAdDesign{
+
+        .text1{
+        font-size:var(--biggestFontSize);
+        font-weight: 800;
+        }
+
+        .grid-container{
+            p{
+                // font-size: 5rem;
+                text-align: center;
+            }
+        .product-box-video{
+            
+
+                video{  
+                    border-radius: 20px;
+                    width: 90%;
+                    margin-top: 50px;
+                    margin-left: 10%;
+                }    
+            }
+            
+        }
     }
 }
-}
-  

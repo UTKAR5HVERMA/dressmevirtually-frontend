@@ -36,8 +36,7 @@ root {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.selectionText {
+.Home .selectionText {
   position: absolute;
   height: 100%;
   top: 30%;
@@ -45,16 +44,16 @@ root {
   color: var(--primaryColoraText);
   padding: 0 1.3rem;
 }
-.selectionText h1 {
+.Home .selectionText h1 {
   font-size: var(--biggestFontSize);
   font-weight: 900;
 }
-.selectionText p {
+.Home .selectionText p {
   padding: 1rem 0;
   font-size: var(--normalFontsize);
   font-weight: 500;
 }
-.selectionText .btn {
+.Home .selectionText .btn {
   color: var(--charcolBlack);
   background-color: var(--primaryColoraText);
   gap: 0.5rem;
@@ -62,6 +61,97 @@ root {
   padding-right: 2rem;
   font-size: var(--h3Fontsize);
 }
-.selectionText .btn:hover {
+.Home .selectionText .btn:hover {
   background-color: #00FFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .Home .selectionText {
+    padding: 0 2rem;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .Home .selectionText h1 {
+    font-size: var(--biggestFontSize);
+    font-weight: 900;
+  }
+  .Home .selectionText p {
+    padding: 1rem 0;
+    font-size: var(--h2Fontsize);
+    max-width: 70%;
+    margin: auto;
+  }
+  .Home .selectionText .btn {
+    font-size: var(--h3Fontsize);
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  Home .selectionText {
+    width: 100%;
+  }
+  Home .selectionText h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    max-width: 70%;
+    margin: auto;
+  }
+  Home .selectionText p {
+    padding: 1rem 0;
+    font-size: var(--h2Fontsize);
+    max-width: 70%;
+    margin: auto;
+  }
+  Home .selectionText .btn {
+    gap: 0.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: var(--h3Fontsize);
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .Home {
+    position: relative;
+  }
+  .Home .selectionText {
+    padding: 0 8rem;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .Home .selectionText h1 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .Home .selectionText p {
+    padding: 4rem 0;
+    font-size: var(--h2Fontsize);
+    font-weight: 500;
+    max-width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .Home {
+    position: relative;
+  }
+  .Home .selectionText {
+    padding: 0 24rem;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .Home .selectionText h1 {
+    font-size: 3rem;
+    font-weight: 1000;
+  }
+  .Home .selectionText p {
+    padding: 4rem 0;
+    font-size: var(--h2Fontsize);
+    font-weight: 500;
+    max-width: 80%;
+    margin: auto;
+  }
 }/*# sourceMappingURL=Home.css.map */

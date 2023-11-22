@@ -2,7 +2,6 @@
 // import About from './components/About/About'
 import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
-
 import Questions from './components/Questions/Questions'
 import Middle from './components/Middle/Middle'
 // import Reviews from './components/Reviews/Reviews'
@@ -15,16 +14,16 @@ function App() {
 
   return (
    <div>
-    <Navbar/>
-    <Home/>
+   <Navbar/>
+    <Home/> 
     <Middle/>
     <Signup/>
     <Questions/>
     <Footer/>
-    {/* <Reviews/> */}
-    {/* <AIvirtuallworld/>
-    <Contact/>
-    <About/> */}
+    {/* <Reviews/> */} 
+    {/* {/* <AIvirtuallworld/> */}
+    {/* <Contact/> */}
+    {/* <About/> */}
 
    </div>
   )
