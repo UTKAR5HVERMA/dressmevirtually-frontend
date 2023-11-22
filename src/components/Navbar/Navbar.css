@@ -26,7 +26,7 @@
   width: 100%;
   padding: 1.5rem 2rem;
   position: fixed;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: 0.2s;
   border-bottom: 1.5px solid var(--primaryColoraText);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -44,10 +44,6 @@
   font-size: var(--h3Fontsize);
   justify-content: center;
 }
-.navBar .navbar.scrolled {
-  background-color: #333;
-  color: #fff;
-}
 @media screen and (max-width: 767px) {
   .navBar .menu {
     position: absolute;
@@ -59,7 +55,7 @@
     background: rgb(7, 6, 7);
     padding: 2rem;
     border-radius: 10px;
-    transition: 0.8s ease-in-out;
+    transition: 0.2s;
   }
   .navBar .menu li {
     color: var(--primaryColoraText);
@@ -100,6 +96,11 @@
 }
 .navBar .showNavbar {
   top: 8rem;
+}
+
+.navBar.scrolled {
+  z-index: -1000;
+  transition: ease-in;
 }
 
 @media screen and (min-width: 768px) {

@@ -38,8 +38,7 @@ const Navbar= ()=> {
         <li className='navList'>Home</li>
         <li className='navList'>AI Virtual Product</li>
         <li className='navList'>About</li>
-        <li className='navList' >
-          contact</li>
+        <li className='navList' >contact</li>
       </ul>
       <AiFillCloseCircle className='icon closeicon' onClick={removeNavBar}/>
       </div>

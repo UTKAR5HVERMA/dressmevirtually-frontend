@@ -30,7 +30,7 @@
     width: 100%;
     padding: 1.5rem 2rem ;
     position: fixed;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: .2s;
     border-bottom: 1.5px
     solid var(--primaryColoraText);
     // background: rgba(255,255,255,0.737);
@@ -52,10 +52,7 @@
         
         
     }
-    .navbar.scrolled {
-        background-color: #333;
-        color: #fff;
-      }
+   
 //     .menu{
 //         display: flex;
 //         align-items: center,;
@@ -75,7 +72,7 @@
         background: rgb(7, 6, 7) ;
         padding: 2rem;
         border-radius:10px;
-        transition: .8s ease-in-out;
+        transition: .2s;
         // box-shadow: 0 1.5px 3px 4px rgba(0, 0, 0, 0.516);
         li{
             color: var(--primaryColoraText);
@@ -125,6 +122,14 @@
 }
 
 }
+
+.navBar.scrolled { 
+    z-index:-1000;
+    transition: ease-in;
+  }
+
+
+
 @media screen and (min-width:768px ) {
     .navBar{
         .logoDiv{
