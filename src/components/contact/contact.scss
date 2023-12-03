@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap');
+
+
+:root{
+    
+    --charcolBlack: #101820;
+    --primaryColoraText: #FEE715;
+    --primaryColorlight:  #00FFFF;
+    --inputText: hsl(330,12%, 97%);
+    --cardColor: hsl(300, 3%,94%);
+    --greyText: hsl(0,0%,51%);
+    --formcolor: #F9E795;
+    --bgColor: hsl(0,0%, 100%);
+    --whiteColor: hsl(0,0%, 100%);
+
+    --biggestFontSize: 2.5rem;
+    --h1Fontsize: 2rem;
+    --h2Fontsize: 1.25rem;
+    --h3Fontsize: 1rem;
+    --normalFontsize: 0.938rem;
+    --smallFontsize: 0.813rem;
+    --smallestFontsize: 0.75rem;
+    --borderRadius: 3rem;
+}
+
+.ContactBox{
+    display:flex;
+    justify-content: center;
+    .contactForm{
+        margin-top:100px ;    
+        padding-bottom: 10px;
+        // border: 5px solid var(--primaryColoraText);
+        .contactHeader{
+            display: flex;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            justify-content: center;
+            
+            color: var(--primaryColoraText);
+            span{
+                margin-left: 1rem;
+                color: #00FFFF;
+            }
+        }
+        .formContent{  ul{
+            li{
+                
+                .secHeading{
+                    display:inline;
+                    font-size: var(--h3Fontsize);
+                    color: #101820;
+                    padding-right: 3rem;
+                }
+                gap: 1rem;
+                input, textarea{
+                    
+                    background: var(--cardColor);
+                    width: 100%;
+                    padding: 1rem;
+                    margin-top: .5rem;
+                    margin-bottom: 1rem;
+                    border: none;
+                    outline: none;
+                    border-radius: var(--borderRadius);
+                    &::placeholder{
+                        font-size:var(--smallestFontsize) ;
+                        color:black;
+                    }
+                }
+                textarea{
+                    height: 100px;
+                    border-radius: 10px;       
+                }
+                
+            }
+        }
+    }
+}
+}

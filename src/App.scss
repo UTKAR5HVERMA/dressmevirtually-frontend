@@ -33,6 +33,13 @@ body{
 
     
 }
+.bar{
+    color: var(--primaryColoraText);
+    &:hover{
+        color: var(--primaryColorlight);
+        // border-bottom: 1.5px solid var(--primaryColoraText);
+    }
+}
 .flex{
         display: flex;
         align-items: center;

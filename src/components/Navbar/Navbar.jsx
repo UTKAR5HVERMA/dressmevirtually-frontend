@@ -2,7 +2,7 @@ import React, { useState ,useEffect } from 'react'
 import './Navbar.css'
 import {AiFillCloseCircle} from 'react-icons/ai'
 import {PiDotsNineBold} from 'react-icons/pi'
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Navbar= ()=> {
   const [navBar, setNavBar] = useState("menu");
@@ -35,10 +35,10 @@ const Navbar= ()=> {
       </div>
       <div className={navBar}>
       <ul>
-        <li className='navList'>Home</li>
-        <li className='navList'>AI Virtual Product</li>
-        <li className='navList'>About</li>
-        <li className='navList' >contact</li>
+        <li className='navList'><Link className="bar" to="/home">Home</Link></li>
+        <li className='navList'><Link className="bar" to="/aivirtuallproduct">AI Virtual Product</Link></li>
+        <li className='navList'><Link className="bar" to='/about'>About</Link></li>
+        <li className='navList'><Link className="bar" to='/contact'>Contact</Link></li>
       </ul>
       <AiFillCloseCircle className='icon closeicon' onClick={removeNavBar}/>
       </div>

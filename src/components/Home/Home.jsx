@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.css'
 import Video from '../../../Background/Gradient-golden.mp4'
-
+// import Footer from '../../components/Footer/Footer.jsx'
 import { AiOutlineSwapRight } from 'react-icons/ai';
 // import * as THREE from 'three';
 const Home= ()=> {
@@ -17,8 +17,8 @@ const Home= ()=> {
         <button className='btn'>
           GET STARTED <AiOutlineSwapRight className='icon'/></button>
         </div>
+        {/* <Footer/> */}
         </div>
-        
         )
       
 };

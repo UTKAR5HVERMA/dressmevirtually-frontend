@@ -1,1 +1,127 @@
-/*# sourceMappingURL=About.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+:root {
+  --charcolBlack: #101820;
+  --primaryColoraText: #FEE715;
+  --primaryColorlight: #00FFFF;
+  --inputText: hsl(330,12%, 97%);
+  --cardColor: hsl(300, 3%,94%);
+  --greyText: hsl(0,0%,51%);
+  --formcolor: #F9E795;
+  --bgColor: hsl(0,0%, 100%);
+  --whiteColor: hsl(0,0%, 100%);
+  --biggestFontSize: 2.5rem;
+  --h1Fontsize: 2rem;
+  --h2Fontsize: 1.25rem;
+  --h3Fontsize: 1rem;
+  --normalFontsize: 0.938rem;
+  --smallFontsize: 0.813rem;
+  --smallestFontsize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.AboutPage {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgb(25, 25, 25);
+}
+.AboutPage .secHeading {
+  text-align: center;
+  padding-top: 8rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: var(--h2Fontsize);
+  color: var(--primaryColoraText);
+}
+.AboutPage .secHeading span {
+  color: var(--primaryColorlight);
+}
+.AboutPage .colabImage img {
+  position: absolute;
+}
+.AboutPage .collabDetail {
+  border-radius: 10px;
+  padding-top: 5rem;
+  position: relative;
+  text-align: center;
+}
+.AboutPage .collabDetail h1 {
+  text-align: center;
+  color: var(--primaryColoraText);
+}
+.AboutPage .collabDetail h1 span {
+  color: var(--primaryColorlight);
+}
+.AboutPage .collabDetail p {
+  background-color: var();
+  padding-top: 1rem;
+  font-size: var(--h3Fontsize);
+  text-align: left;
+  color: var(--whiteColor);
+}
+.AboutPage .teamHeading {
+  padding-top: 2rem;
+}
+.AboutPage .teamHeading h1 {
+  text-align: center;
+  margin-bottom: 2re0m;
+  color: var(--primaryColoraText);
+}
+.AboutPage .teamHeading h2 {
+  text-align: left;
+  color: var(--primaryColorlight);
+}
+.AboutPage .teamHeading p {
+  background-color: var();
+  padding-bottom: 2rem;
+  font-size: var(--h3Fontsize);
+  text-align: left;
+  color: var(--whiteColor);
+}
+.AboutPage .teamHeading .uvIntro {
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+  text-align: left;
+}
+.AboutPage .teamHeading .uvIntro p {
+  justify-content: center;
+}
+.AboutPage .teamHeading .uvIntro .teamImage1 {
+  display: flex;
+  margin: 1rem;
+  justify-content: right;
+}
+.AboutPage .teamHeading .uvIntro .teamImage1 img {
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 425px) {
+  .AboutPage .colabImage img {
+    height: 25vh;
+  }
+}
+@media screen and (min-width: 430px) {
+  .AboutPage .colabImage img {
+    height: 25vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .AboutPage .colabImage img {
+    width: 120vh;
+    height: 40vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .AboutPage .colabImage img {
+    width: 160vh;
+    height: 45vh;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .AboutPage .colabImage img {
+    width: 250vh;
+    height: 50vh;
+  }
+}/*# sourceMappingURL=About.css.map */

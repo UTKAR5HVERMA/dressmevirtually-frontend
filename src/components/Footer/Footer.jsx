@@ -35,7 +35,7 @@ const Footer= ()=> {
                     <a href="#">About</a>
                   </li>
                   <li>
-                    <a href='#'>Contact</a>
+                    <a href='http://localhost:5173/contact'>Contact</a>
                   </li>
               </div>
               <div className='footerLinks'>
