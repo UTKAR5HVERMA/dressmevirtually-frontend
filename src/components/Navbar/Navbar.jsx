@@ -2,11 +2,12 @@ import React, { useState ,useEffect } from 'react'
 import './Navbar.css'
 import {AiFillCloseCircle} from 'react-icons/ai'
 import {PiDotsNineBold} from 'react-icons/pi'
-import { Link } from 'react-router-dom';
-
+import { Link , useNavigate} from 'react-router-dom';
+// import Signup from '../SignUp/Signup';
 const Navbar= ()=> {
   const [navBar, setNavBar] = useState("menu");
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate  = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +28,9 @@ const Navbar= ()=> {
   const removeNavBar = ()=> {
     setNavBar('menu ');
 }
+const handleClick = () => {
+  navigate('/signup');
+};
   return (
 
     <div className={`navBar ${isScrolled ? 'scrolled' : ''}`}>
@@ -43,7 +47,7 @@ const Navbar= ()=> {
       <AiFillCloseCircle className='icon closeicon' onClick={removeNavBar}/>
       </div>
     
-      <button className='signUpBtn btn'>Sign Up</button>
+      <button onClick={handleClick} className='signUpBtn btn'>Sign Up</button>
     
       <PiDotsNineBold className='icon menuicon' onClick={showNavBar}/>
     </div>

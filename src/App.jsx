@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
 // import Links from "./Link.jsx"
 // import Reviews from './components/Reviews/Reviews'
 import Navbar from './components/Navbar/Navbar'
-// import Signup from './components/SignUp/Signup'
+import Signup from './components/SignUp/Signup'
 import './app.css'
 import Contact from './components/contact/Contact.jsx'
 function App() {
@@ -20,6 +20,7 @@ function App() {
 <BrowserRouter>
 <Navbar/>
         <Routes>
+          <Route path="/signup" element={<Signup/>} />
           <Route path="/" >
             <Route index element={<div>
             <Home/>
@@ -40,15 +41,6 @@ function App() {
           
         </Routes>
       </BrowserRouter>
-
-   {/* <Navbar/>
-    <Home/> 
-    <Signup/>
-    <Reviews/> 
-    {/* <AIvirtuallworld/> */}
-    {/* <Contact/> */}
-    {/* <About/> */}
-
    </div>
   )
 }

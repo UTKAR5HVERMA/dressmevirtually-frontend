@@ -21,7 +21,7 @@
 
 .AboutPage {
   position: relative;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   top: 0;
   background-color: rgb(25, 25, 25);
@@ -80,6 +80,10 @@
   text-align: left;
   color: var(--whiteColor);
 }
+.AboutPage .teamHeading .uvIntroHeading {
+  padding-bottom: 22px;
+  color: var(--primaryColoraText);
+}
 .AboutPage .teamHeading .uvIntro {
   display: inline-grid;
   grid-template-columns: 50% 50%;
@@ -95,6 +99,39 @@
 }
 .AboutPage .teamHeading .uvIntro .teamImage1 img {
   border-radius: 20px;
+}
+.AboutPage .teamHeading .aboutMore1 {
+  display: inline;
+}
+.AboutPage .teamHeading .aboutMore1 h2 {
+  padding-bottom: 10px;
+}
+.AboutPage .teamHeading .aboutMore1 p h3 {
+  color: red;
+}
+.AboutPage .contactForCollab {
+  padding: 10px;
+  color: var(--whiteColor);
+}
+.AboutPage .contactForCollab h1 {
+  text-align: center;
+  padding: 5px;
+  color: var(--primaryColorlight);
+}
+.AboutPage .contactForCollab h2 {
+  padding-bottom: 20px;
+  text-align: center;
+}
+.AboutPage .contactForCollab a {
+  font-size: var(--h2Fontsize);
+  text-align: center;
+  color: var(--charcolBlack);
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  margin: 0 100px 0 100px;
+  border-radius: 20px;
+  background-color: var(--primaryColoraText);
 }
 
 @media screen and (max-width: 425px) {
