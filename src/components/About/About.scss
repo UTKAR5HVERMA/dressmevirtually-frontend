@@ -43,6 +43,8 @@
         } 
         .colabImage{
             img{
+                min-width: 100%;
+                height: auto;
                 position: absolute;
             }
         }
@@ -50,7 +52,7 @@
             h1{
                 // position: absolute;
                 text-align: center;
-                // text-shadow:;
+            
                 color: var(--primaryColoraText);
                 span{
                     color: var(--primaryColorlight);
@@ -73,7 +75,7 @@
             padding-top: 2rem;
             h1{ 
                 text-align: center;
-                margin-bottom: 2re0m;
+                margin-bottom: 2rem;
                 color: var(--primaryColoraText);
             }
             h2{
@@ -165,7 +167,7 @@
 
     img{
         // position: absolute;
-        height: 25vh;
+        height: auto;
         // width: 100%;
     }
 }
@@ -191,10 +193,89 @@
 .colabImage{
 
     img{
-        // margin-left: -100px;
-        width: 120vh;
-        height: 40vh;
+        height: auto;
+        // min-width: 100%;
     }
+}
+.secHeading{
+    padding-top: 10rem;
+    font-size: 2rem;
+}
+.collabDetail{
+    font-size: 1.2rem;
+    p{
+        font-size: var(--h2Fontsize);
+    }
+}
+.teamHeading{
+    padding-top: 2rem;
+    h1{ 
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: var(--h1Fontsize);
+        color: var(--primaryColoraText);
+    }
+    h2{
+        text-align: left;
+        // position: relative;
+        color:var(--primaryColorlight);
+    }
+    p{
+        background-color: var();
+        padding-bottom: 2rem;
+        font-size: var(--h2Fontsize);
+        text-align: left;
+        color: var(--whiteColor);
+        
+    }   
+    // display: flex;
+    .uvIntroHeading{
+        font-size: var(--h1Fontsize);
+        padding-top: 20px;
+        padding-bottom:22px;
+        color: var(--primaryColoraText);
+    }
+    .uvIntro{
+        display: inline-grid;
+        grid-template-columns: 50% 50%;
+        text-align: left;
+        p{
+            justify-content: center;
+        }
+        .teamImage1{
+            // margin-left: 1rem;
+            margin: 0rem 3rem 0 0rem;
+            display: flex;
+            // margin: 1rem;
+            justify-content: right;
+            img{
+                // position: absolute;
+                border-radius: 20px;
+
+                height: auto;   
+                width:70%;
+            }
+        }
+    }
+    .aboutMore1{
+        display: inline;
+        h2{
+            padding-bottom: 10px;
+        }
+        p{
+            h3{
+                // text-align:left;
+                color: red;
+            }
+        }
+    }
+
+}
+.contactForCollab{
+    a{
+        margin: 0 40% 0 40%;
+    }
+
 }
 } 
         
@@ -203,28 +284,126 @@
 .AboutPage{
 
 
+    .secHeading{
+        padding-top: 13rem;    
+        font-size: 3rem;
+    }
 
-
+    .collabDetail{
+        padding-top: 8rem;
+        font-size: 1.4rem;
+         p{
+            margin: 0 3rem 0rem 3rem ;
+            text-align: center;
+            font-size: 1.5rem;
+         }   
+        }
 .colabImage{
     img{
-        // margin-left: -100px;
-        width: 160vh;
-        height: 45vh;
+        // margin-left: -100px
+ 
+            height: auto;
     }
 }
+    .teamHeading{
+        h1{
+            font-size: 3rem;
+        }
+        .uvIntroHeading{
+            font-size: 2.5rem;
+
+            margin-left: 1rem;
+        }
+        .uvIntro{
+            p{
+
+                margin-left: 1rem;
+                font-size: 1.5rem;
+            }
+            .teamImage1{
+                img{
+                    height: auto;
+                    width: 70%;                
+                }
+            }
+        }
+    }
+
 } 
         
 }
 @media screen and (min-width:1440px ){
        .AboutPage{
-.colabImage{
+           .secHeading{
 
+                padding-top: 20rem;
+               font-size: 4rem;
+            }
+
+            .colabImage{
     img{
         // margin-left: -100px;
-        width: 250vh;
-        height: 50vh;
+        // width: 250vh;
+        height: auto;
     }
 }
+    .collabDetail{
+        padding-top: 10rem;
+        h1{
+            font-size: 3rem;
+        }
+        p{  
+            margin: 0 5rem 0rem 5rem ;
+            text-align: center;
+            font-size:2rem;
+        }
+    }
+.teamHeading{
+        h1{
+            font-size: 4rem;
+        }
+        .uvIntroHeading{
+
+            font-size: 3rem;
+        
+        }
+    .uvIntro{
+        p{
+            font-size: 2rem;
+        }
+        .teamImage1{
+            img{
+                height: auto;
+                width: 60%;
+            }
+        }
+    
+    }
+
+
+
+}
+
 } 
         
+}
+@media screen and (min-width:2560px ){
+    .AboutPage{
+        .secHeading{
+
+             padding-top: 40rem;
+            font-size: 5rem;
+         }
+         .collabDetail{
+             padding-top: 20rem;
+             h1{
+                 font-size: 4rem;
+             }
+             p{  
+                 margin: 0 5rem 0rem 5rem ;
+                 text-align: center;
+                 font-size:2rem;
+             }
+         }
+        }
 }

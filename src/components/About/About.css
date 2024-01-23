@@ -39,6 +39,8 @@
   color: var(--primaryColorlight);
 }
 .AboutPage .colabImage img {
+  min-width: 100%;
+  height: auto;
   position: absolute;
 }
 .AboutPage .collabDetail {
@@ -66,7 +68,7 @@
 }
 .AboutPage .teamHeading h1 {
   text-align: center;
-  margin-bottom: 2re0m;
+  margin-bottom: 2rem;
   color: var(--primaryColoraText);
 }
 .AboutPage .teamHeading h2 {
@@ -136,7 +138,7 @@
 
 @media screen and (max-width: 425px) {
   .AboutPage .colabImage img {
-    height: 25vh;
+    height: auto;
   }
 }
 @media screen and (min-width: 430px) {
@@ -146,19 +148,155 @@
 }
 @media screen and (min-width: 768px) {
   .AboutPage .colabImage img {
-    width: 120vh;
-    height: 40vh;
+    height: auto;
+  }
+  .AboutPage .secHeading {
+    padding-top: 10rem;
+    font-size: 2rem;
+  }
+  .AboutPage .collabDetail {
+    font-size: 1.2rem;
+  }
+  .AboutPage .collabDetail p {
+    font-size: var(--h2Fontsize);
+  }
+  .AboutPage .teamHeading {
+    padding-top: 2rem;
+  }
+  .AboutPage .teamHeading h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: var(--h1Fontsize);
+    color: var(--primaryColoraText);
+  }
+  .AboutPage .teamHeading h2 {
+    text-align: left;
+    color: var(--primaryColorlight);
+  }
+  .AboutPage .teamHeading p {
+    background-color: var();
+    padding-bottom: 2rem;
+    font-size: var(--h2Fontsize);
+    text-align: left;
+    color: var(--whiteColor);
+  }
+  .AboutPage .teamHeading .uvIntroHeading {
+    font-size: var(--h1Fontsize);
+    padding-top: 20px;
+    padding-bottom: 22px;
+    color: var(--primaryColoraText);
+  }
+  .AboutPage .teamHeading .uvIntro {
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+  }
+  .AboutPage .teamHeading .uvIntro p {
+    justify-content: center;
+  }
+  .AboutPage .teamHeading .uvIntro .teamImage1 {
+    margin: 0rem 3rem 0 0rem;
+    display: flex;
+    justify-content: right;
+  }
+  .AboutPage .teamHeading .uvIntro .teamImage1 img {
+    border-radius: 20px;
+    height: auto;
+    width: 70%;
+  }
+  .AboutPage .teamHeading .aboutMore1 {
+    display: inline;
+  }
+  .AboutPage .teamHeading .aboutMore1 h2 {
+    padding-bottom: 10px;
+  }
+  .AboutPage .teamHeading .aboutMore1 p h3 {
+    color: red;
+  }
+  .AboutPage .contactForCollab a {
+    margin: 0 40% 0 40%;
   }
 }
 @media screen and (min-width: 1024px) {
+  .AboutPage .secHeading {
+    padding-top: 13rem;
+    font-size: 3rem;
+  }
+  .AboutPage .collabDetail {
+    padding-top: 8rem;
+    font-size: 1.4rem;
+  }
+  .AboutPage .collabDetail p {
+    margin: 0 3rem 0rem 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
   .AboutPage .colabImage img {
-    width: 160vh;
-    height: 45vh;
+    height: auto;
+  }
+  .AboutPage .teamHeading h1 {
+    font-size: 3rem;
+  }
+  .AboutPage .teamHeading .uvIntroHeading {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+  }
+  .AboutPage .teamHeading .uvIntro p {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+  .AboutPage .teamHeading .uvIntro .teamImage1 img {
+    height: auto;
+    width: 70%;
   }
 }
 @media screen and (min-width: 1440px) {
+  .AboutPage .secHeading {
+    padding-top: 20rem;
+    font-size: 4rem;
+  }
   .AboutPage .colabImage img {
-    width: 250vh;
-    height: 50vh;
+    height: auto;
+  }
+  .AboutPage .collabDetail {
+    padding-top: 10rem;
+  }
+  .AboutPage .collabDetail h1 {
+    font-size: 3rem;
+  }
+  .AboutPage .collabDetail p {
+    margin: 0 5rem 0rem 5rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .AboutPage .teamHeading h1 {
+    font-size: 4rem;
+  }
+  .AboutPage .teamHeading .uvIntroHeading {
+    font-size: 3rem;
+  }
+  .AboutPage .teamHeading .uvIntro p {
+    font-size: 2rem;
+  }
+  .AboutPage .teamHeading .uvIntro .teamImage1 img {
+    height: auto;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .AboutPage .secHeading {
+    padding-top: 40rem;
+    font-size: 5rem;
+  }
+  .AboutPage .collabDetail {
+    padding-top: 20rem;
+  }
+  .AboutPage .collabDetail h1 {
+    font-size: 4rem;
+  }
+  .AboutPage .collabDetail p {
+    margin: 0 5rem 0rem 5rem;
+    text-align: center;
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=About.css.map */

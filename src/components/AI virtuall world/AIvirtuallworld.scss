@@ -22,3 +22,14 @@
     --smallestFontsize: 0.75rem;
     --borderRadius: 3rem;
 }
+
+.mains{
+    display: flex;
+    .recomend{
+        input{
+            border-radius:10px;
+            // text-align: center;
+        }
+        margin-top: 25rem;
+    }
+}

@@ -43,7 +43,7 @@ const Signup = () => {
           <input type="password" placeholder="Confirm Password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
         </div>
         <button className="btn" type="button" onClick={handleSignUp}>Sign In</button>
-        <p>Are you already member??<span onClick={handleToggle}>Sing Up</span></p>
+        <p>Are you already member??<span onClick={handleToggle}>Sign Up</span></p>
       </form>
     </div>
     </div>)}
@@ -85,7 +85,7 @@ const Signup = () => {
           <input type="number" placeholder="Phone Number" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
         </div>
         <button className="btn" type="button" onClick={handleSignUp}>Register</button>
-        <p>Are you already Sign IN??<span onClick={handleToggle}>Sing In</span></p>
+        <p>Are you already Sign IN??<span onClick={handleToggle}>Sign In</span></p>
       </form>
     </div>
     </div>)}

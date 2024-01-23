@@ -67,25 +67,25 @@ const Contact = () => {
               <li>
                 <h1 className='secHeading'>Name :</h1>
                 <span>
-                  <input type='text' name='name' onChange={handleChange} value={formData.name} placeholder='Enter your name' />
+                  <input type='text' required name='name' onChange={handleChange} value={formData.name} placeholder='Enter your name' />
                 </span>
               </li>
               <li>
                 <h1 className='secHeading'>Email :</h1>
                 <span>
-                  <input type='email' onChange={handleChange} name='email' value={formData.email} placeholder='Email' />
+                  <input type='email' required onChange={handleChange} name='email' value={formData.email} placeholder='Email' />
                 </span>
               </li>
               <li>
                 <h1 className='secHeading'>Phone :</h1>
                 <span>
-                  <input type='tel' onChange={handleChange} name='phone' value={formData.phone} placeholder='Phone Number' />
+                  <input type='tel' required onChange={handleChange} name='phone' value={formData.phone} placeholder='Phone Number' />
                 </span>
               </li>
               <li>
                 <h1 className='secHeading'>Message:</h1>
                 <span>
-                  <textarea className='cas' name='message' value={formData.message} onChange={handleChange} placeholder='Enter Message here' cols='30' rows='10'></textarea>
+                  <textarea className='cas' required name='message' value={formData.message} onChange={handleChange} placeholder='Enter Message here' cols='30' rows='10'></textarea>
                 </span>
               </li>
             </ul>
