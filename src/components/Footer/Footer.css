@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
 :root {
   --charcolBlack: #101820;
+  --charcolBlacklight: #23282c8f;
   --primaryColoraText: #FEE715;
+  --primaryColorBacklight: #fee71550;
   --primaryColorlight: #00FFFF;
   --inputText: hsl(330,12%, 97%);
   --cardColor: hsl(300, 3%,94%);
@@ -19,6 +21,68 @@
   --borderRadius: 3rem;
 }
 
-h1 {
-  font-size: 100px;
+.footer {
+  background-color: var(--cardColor);
+  padding: 2rem 0;
+}
+.footer .secContainer {
+  gap: 1.5rem;
+  text-align: center;
+  align-items: flex-start;
+}
+.footer .secContainer .logoDiv .footerLogo {
+  display: flex;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+}
+.footer .secContainer .logoDiv h2 {
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+.footer .secContainer .logoDiv img.logodm {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+}
+.footer .secContainer .socials {
+  gap: 0.5rem;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+.footer .secContainer .socials .icon {
+  font-size: 40px;
+  background-color: var(--primaryColoraText);
+  border-radius: 50%;
+  padding: 8px;
+  color: var(--whiteColor);
+}
+.footer .secContainer .socials .icon:hover {
+  background: var(--primaryColorlight);
+}
+.footer .secContainer .footerLinks {
+  display: grid;
+  row-gap: 0.2rem;
+}
+.footer .secContainer .footerLinks .linkTitle {
+  padding-bottom: 0.5rem;
+  color: black;
+  font-weight: 700;
+}
+.footer .secContainer .footerLinks li:hover {
+  transform: translate(10px);
+}
+.footer .secContainer .footerLinks li:hover a {
+  color: black;
+}
+.footer .secContainer .footerLinks a, .footer .secContainer .footerLinks .phone, .footer .secContainer .footerLinks .email {
+  color: black;
+  font-size: 13px;
+  font-weight: 500;
 }/*# sourceMappingURL=Footer.css.map */

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap');
+
+
+:root{
+    
+    --charcolBlack: #101820;
+    --primaryColoraText: #FEE715;
+    --primaryColorlight:  #00FFFF;
+    --inputText: hsl(330,12%, 97%);
+    --cardColor: hsl(300, 3%,94%);
+    --greyText: hsl(0,0%,51%);
+    --formcolor: #F9E795;
+    --bgColor: hsl(0,0%, 100%);
+    --whiteColor: hsl(0,0%, 100%);
+
+    --biggestFontSize: 2.5rem;
+    --h1Fontsize: 2rem;
+    --h2Fontsize: 1.25rem;
+    --h3Fontsize: 1rem;
+    --normalFontsize: 0.938rem;
+    --smallFontsize: 0.813rem;
+    --smallestFontsize: 0.75rem;
+    --borderRadius: 3rem;
+}
+    
+.AboutPage{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgb(25, 25, 25);
+    .secHeading{
+        text-align: center;
+        padding-top: 8rem;
+        display: flex; 
+        justify-content: center;   
+        position: relative;
+            font-size: var(--h2Fontsize);
+            color: var(--primaryColoraText);
+            span{
+                color:var(--primaryColorlight);
+            }
+        } 
+        .colabImage{
+            img{
+                position: absolute;
+            }
+        }
+        .collabDetail{
+            h1{
+                // position: absolute;
+                text-align: center;
+                // text-shadow:;
+                color: var(--primaryColoraText);
+                span{
+                    color: var(--primaryColorlight);
+                }
+            } 
+            p{
+                background-color: var();
+                padding-top: 1rem;
+                font-size: var(--h3Fontsize);
+                text-align: left;
+                color: var(--whiteColor);
+                
+            }        
+            border-radius: 10px;
+            padding-top: 5rem;
+            position: relative;
+            text-align: center;
+        }
+        .teamHeading{
+            padding-top: 2rem;
+            h1{ 
+                text-align: center;
+                margin-bottom: 2re0m;
+                color: var(--primaryColoraText);
+            }
+            h2{
+                text-align: left;
+                // position: relative;
+                color:var(--primaryColorlight);
+            }
+            p{
+                background-color: var();
+                padding-bottom: 2rem;
+                font-size: var(--h3Fontsize);
+                text-align: left;
+                color: var(--whiteColor);
+                
+            }   
+            // display: flex;
+            .uvIntroHeading{
+                padding-bottom:22px;
+                color: var(--primaryColoraText);
+            }
+            .uvIntro{
+                display: inline-grid;
+                grid-template-columns: 50% 50%;
+                text-align: left;
+                p{
+                    justify-content: center;
+                }
+                .teamImage1{
+                    display: flex;
+                    margin: 1rem;
+                    justify-content: right;
+                    img{
+                        // position: relative;
+                        border-radius: 20px;
+                        // width:50%;
+                    }
+                }
+            }
+            .aboutMore1{
+                display: inline;
+                h2{
+                    padding-bottom: 10px;
+                }
+                p{
+                    h3{
+                        // text-align:left;
+                        color: red;
+                    }
+                }
+            }
+
+        }
+        .contactForCollab{
+            padding: 10px;
+            color: var(--whiteColor);
+            h1{
+            text-align: center;
+                padding: 5px;
+                color: var(--primaryColorlight);
+            }
+            h2{
+                padding-bottom: 20px;
+                text-align: center;
+            }
+            a{
+                font-size:var(--h2Fontsize);
+                text-align: center;
+                color: var(--charcolBlack);
+                display: flex;
+                justify-content: center;   
+                height: 30px;
+                    
+                margin: 0 100px 0 100px;    
+                // width: 10px;
+                border-radius: 20px;
+                background-color: var(--primaryColoraText);
+            }
+
+        }
+
+    }
+    
+    
+    
+    
+@media screen and (max-width:425px ){
+.AboutPage{
+.colabImage{
+
+    img{
+        // position: absolute;
+        height: 25vh;
+        // width: 100%;
+    }
+}
+} 
+        
+}
+    
+@media screen and (min-width:430px ){
+.AboutPage{
+.colabImage{
+
+    img{
+        // position: absolute;
+        height: 25vh;
+        // width: 100%;
+    }
+}
+} 
+        
+}
+@media screen and (min-width:768px ){
+.AboutPage{
+.colabImage{
+
+    img{
+        // margin-left: -100px;
+        width: 120vh;
+        height: 40vh;
+    }
+}
+} 
+        
+}
+@media screen and (min-width:1024px ){
+.AboutPage{
+
+
+
+
+.colabImage{
+    img{
+        // margin-left: -100px;
+        width: 160vh;
+        height: 45vh;
+    }
+}
+} 
+        
+}
+@media screen and (min-width:1440px ){
+       .AboutPage{
+.colabImage{
+
+    img{
+        // margin-left: -100px;
+        width: 250vh;
+        height: 50vh;
+    }
+}
+} 
+        
+}

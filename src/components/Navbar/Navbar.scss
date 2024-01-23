@@ -30,9 +30,10 @@
     width: 100%;
     padding: 1.5rem 2rem ;
     position: fixed;
+    transition: .2s;
     border-bottom: 1.5px
     solid var(--primaryColoraText);
-    // background: var(--charcolBlack);
+    // background: rgba(255,255,255,0.737);
     backdrop-filter: blur(5px);
     z-index: 1000;
     
@@ -49,8 +50,9 @@
             justify-content: center;
         }
         
-        
+    
     }
+   
 //     .menu{
 //         display: flex;
 //         align-items: center,;
@@ -70,7 +72,7 @@
         background: rgb(7, 6, 7) ;
         padding: 2rem;
         border-radius:10px;
-        transition: .8s ease-in-out;
+        transition: .2s;
         // box-shadow: 0 1.5px 3px 4px rgba(0, 0, 0, 0.516);
         li{
             color: var(--primaryColoraText);
@@ -83,6 +85,7 @@
                 color: var(--primaryColorlight);
                 // border-bottom: 1.5px solid var(--primaryColoraText);
             }
+          
         }
     }
 }
@@ -120,3 +123,81 @@
 }
 
 }
+
+.navBar.scrolled { 
+    z-index:-1000;
+    transform: translateY(-1000%);
+    transition: ease-in;
+  }
+
+
+
+@media screen and (min-width:768px ) {
+    .navBar{
+        .logoDiv{
+            span{
+                font-size: var(--h2Fontsize);
+            }
+        }
+        .closeicon,.menuicon{
+            display: none;
+        }
+        }    
+       .menu{
+        ul{
+            display: flex;
+            gap :2rem;
+            li{
+                font-size: var(--h3Fontsize);
+                font-weight: 500;
+                padding: 1rem 0;
+                text-align: center;
+                color: var(--primaryColoraText);
+                cursor: pointer;
+                    &:hover{
+                        color: var(--primaryColorlight);
+                        border-bottom: 1.5px solid var(--primaryColoraText);
+                    }
+                  
+            }
+        }
+       } 
+
+}
+@media screen and (min-width:1240px){
+    .navBar{
+        padding:2rem 6rem ;
+        .menu{
+            ul{
+                gap:4rem;
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width:1440px) {
+    .navBar{
+        padding: 2rem 14rem;
+        .menu{
+            ul{
+                gap: 6rem;
+            }
+        }
+       
+    }
+}
+// @media screen and (min-width:183px) {
+//     .navBar{
+//         padding: 2rem 14rem;
+//         .menu{
+//             display: flex;
+//             ul{
+//                 gap:10rem;
+//                 // li{
+//                 //     font-size: var(--h2Fontsize);
+//                 // }
+//             }
+//         }
+//     }
+// }
