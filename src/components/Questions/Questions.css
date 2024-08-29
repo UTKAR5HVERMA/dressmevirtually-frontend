@@ -2,6 +2,7 @@
 :root {
   --charcolBlack: #101820;
   --primaryColoraText: #FEE715;
+  --primaryColorBacklight: #fee71550;
   --primaryColorlight: #00FFFF;
   --inputText: hsl(330,12%, 97%);
   --cardColor: hsl(300, 3%,94%);
@@ -19,11 +20,103 @@
   --borderRadius: 3rem;
 }
 
-.questions .submitbtn {
+.questions .submitbtn .secHeading h3, .questions .submitbtn .secHeading h4 {
+  padding-bottom: 1.5rem;
+}
+.questions .submitbtn .secHeading p {
+  font-size: var(--smallestFontsize);
+  color: black;
+  padding-bottom: none;
+  outline: none;
+  border-radius: var(--borderRadius);
+}
+.questions .submitbtn .secHeading p::-moz-placeholder {
+  font-size: var(--smallestFontsize);
+  color: black;
+}
+.questions .submitbtn .secHeading p::placeholder {
+  font-size: var(--smallestFontsize);
+  color: black;
+}
+.questions .submitbtn .submitbtn {
   background-color: var(--primaryColoraText);
   color: var(--charcolBlack);
 }
-.questions .submitbtn:hover {
+.questions .submitbtn .submitbtn:hover {
   color: var(--charcolBlack);
   background: var(--primaryColorlight);
+}
+.questions .form .formContent {
+  gap: 1rem;
+}
+.questions .form .formContent input, .questions .form .formContent textarea {
+  background: var(--cardColor);
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: var(--borderRadius);
+}
+.questions .form .formContent input::-moz-placeholder, .questions .form .formContent textarea::-moz-placeholder {
+  font-size: var(--smallestFontsize);
+  color: black;
+}
+.questions .form .formContent input::placeholder, .questions .form .formContent textarea::placeholder {
+  font-size: var(--smallestFontsize);
+  color: black;
+}
+.questions .form .formContent textarea {
+  height: 100px;
+  border-radius: 10px;
+}
+.questions .accordionContainer .title {
+  font-size: var(--normalFontsize);
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  justify-content: space-between;
+  background: var(--primaryColorBacklight);
+}
+.questions .accordionContainer .title span {
+  cursor: pointer;
+}
+.questions .accordionContainer .title span .icon {
+  font-size: 1.5rem;
+  color: black;
+}
+.questions .accordionContainer .description {
+  font-size: var(--smallestFontsize);
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+  white-space: pre-line;
+  transition: all 0.3s ease-in-out;
+  height: 0;
+  opacity: 0;
+  padding: 0 1rem;
+  background: var(--cardColor);
+  border-radius: 0 0 10px 10px;
+  color: black;
+}
+.questions .accordionContainer .show {
+  height: 140px;
+  opacity: 1;
+}
+.questions .accordionContainer .activeTitle {
+  background: var(--primaryColorBacklight);
+  border-radius: 10px 10px 0 0;
+}
+@media screen and (min-width: 640px) {
+  .questions .accordionContainer .title {
+    font-size: var(--h3Fontsize);
+  }
+  .questions .accordionContainer .title span .icon {
+    font-size: 1.5rem;
+  }
+  .questions .description {
+    font-size: var(--normalFontsize);
+  }
+  .questions .show {
+    height: 150px;
+  }
 }/*# sourceMappingURL=Questions.css.map */

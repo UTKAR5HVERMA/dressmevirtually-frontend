@@ -1,16 +1,15 @@
 import React from 'react'
 import './Home.css'
 import Video from '../../../Background/Gradient-golden.mp4'
-
+// import Footer from '../../components/Footer/Footer.jsx'
 import { AiOutlineSwapRight } from 'react-icons/ai';
 // import * as THREE from 'three';
 const Home= ()=> {
     return (
-      <dir>
+      
       <div className='Home'>
         <div className='videoBg'>
           <video src={Video} autoPlay loop muted></video>
-        </div>
         </div>
         <div className='selectionText'>
          <h1>You're an AI fashion assistant called "Dress Me Virtually."</h1>
@@ -18,8 +17,9 @@ const Home= ()=> {
         <button className='btn'>
           GET STARTED <AiOutlineSwapRight className='icon'/></button>
         </div>
-        
-        </dir>)
+        {/* <Footer/> */}
+        </div>
+        )
       
 };
 

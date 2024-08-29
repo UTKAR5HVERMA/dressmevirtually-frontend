@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap');
+
+:root {
+    --charcolBlack: #101820;
+    --primaryColoraText: #FEE715;
+    --primaryColorlight: #00FFFF;
+    --inputText: hsl(330, 12%, 97%);
+    --cardColor: hsl(300, 3%, 94%);
+    --greyText: hsl(0, 0%, 51%);
+    --formcolor: #F9E795;
+    --bgColor: hsl(0, 0%, 100%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --biggestFontSize: 2.5rem;
+    --h1Fontsize: 2rem;
+    --h2Fontsize: 1.5rem;
+    --h3Fontsize: 1rem;
+    --normalFontsize: 0.938rem;
+    --smallFontsize: 0.813rem;
+    --smallestFontsize: 0.75rem;
+    --borderRadius: 3rem;
+    --blurBackground: rgba(0, 0, 0, 0.5);
+}
+
+.AboutPage {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgb(25, 25, 25);
+    padding: 2rem;
+
+    .secHeading {
+        text-align: center;
+        padding-top: 8rem;
+        font-size: var(--h2Fontsize);
+        color: var(--primaryColoraText);
+
+        span {
+            color: var(--primaryColorlight);
+        }
+    }
+
+    .colabImage img {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .collabDetail {
+        h1 {
+            text-align: center;
+            color: var(--primaryColoraText);
+
+            span {
+                color: var(--primaryColorlight);
+            }
+        }
+
+        p {
+            padding-top: 1rem;
+            font-size: var(--h3Fontsize);
+            text-align: left;
+            color: var(--whiteColor);
+        }
+
+        border-radius: 10px;
+        padding-top: 3rem;
+        text-align: center;
+    }
+
+    .teamHeading {
+        padding-top: 2rem;
+        border: 2px solid var(--primaryColorlight);
+        border-radius: 20px;
+        background: var(--blurBackground);
+        backdrop-filter: blur(10px);
+        margin: 2rem auto;
+        padding: 2rem;
+        max-width: 800px;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--primaryColoraText);
+            font-size: var(--h1Fontsize);
+        }
+
+        h2 {
+            text-align: left;
+            color: var(--primaryColorlight);
+            font-size: var(--h2Fontsize);
+        }
+
+        p {
+            padding-bottom: 1rem;
+            font-size: var(--h3Fontsize);
+            text-align: left;
+            color: var(--whiteColor);
+        }
+
+        .uvIntroHeading {
+            padding-bottom: 1rem;
+            color: var(--primaryColoraText);
+            font-size: var(--h2Fontsize);
+        }
+
+        .uvIntro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            text-align: left;
+
+            .teamImage1 {
+                display: flex;
+                justify-content: flex-end;
+
+                img {
+                    border-radius: 20px;
+                    width: 100%;
+                    max-width: 300px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .contactForCollab {
+        padding: 1rem;
+        color: var(--whiteColor);
+
+        h1 {
+            text-align: center;
+            padding: 0.5rem;
+            color: var(--primaryColorlight);
+        }
+
+        h2 {
+            padding-bottom: 1rem;
+            text-align: center;
+        }
+
+        a {
+            font-size: var(--h2Fontsize);
+            color: var(--charcolBlack);
+            // align-items: center;
+            display: flex;
+            // border-width: 20px;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 0.5rem 2rem;
+            border-radius: 20px;
+            background-color: var(--primaryColoraText);
+        }
+        a:hover{
+            animation-duration: 200ms;
+            background-color: (var(--primaryColorlight));
+        }
+    }
+}
+.button-container {
+    display: flex; 
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+}
+/* Responsive Adjustments */
+@media screen and (max-width: 425px) {
+    .AboutPage {
+        .secHeading {
+            padding-top: 5rem;
+            font-size: 1.5rem;
+        }
+
+        .collabDetail {
+            padding-top: 2rem;
+        }
+
+        .teamHeading {
+            .uvIntro {
+                grid-template-columns: 1fr;
+
+                .teamImage1 img {
+                    max-width: 200px; /* Adjusts with text scaling */
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .AboutPage {
+        .secHeading {
+            padding-top: 10rem;
+            font-size: 2rem;
+        }
+
+        .collabDetail p {
+            font-size: 1rem;
+        }
+
+        .teamHeading {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .uvIntroHeading {
+                font-size: 2rem;
+            }
+
+            .uvIntro p {
+                font-size: 1.2rem;
+            }
+
+            .uvIntro .teamImage1 img {
+                max-width: 250px; /* Adjust for tablet size */
+                height: auto;
+            }
+
+            border-width: 3px;
+            padding: 3rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .AboutPage {
+        .secHeading {
+            padding-top: 12rem;
+            font-size: 2.5rem;
+        }
+
+        .collabDetail {
+            padding-top: 4rem;
+            font-size: 1.2rem;
+
+            p {
+                margin: 0 2rem;
+                text-align: center;
+                font-size: 1.5rem;
+            }
+        }
+
+        .teamHeading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                text-align: center;
+            }
+
+            h2, p {
+                text-align: left;
+            }
+
+            .uvIntro {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+                justify-items: center;
+
+                .teamImage1 img {
+                    max-width: 245px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .AboutPage {
+        .secHeading {
+            padding-top: 15rem;
+            font-size: 3rem;
+        }
+
+        .collabDetail {
+            padding-top: 6rem;
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                margin: 0 3rem;
+                font-size: 1.8rem;
+            }
+        }
+
+        .teamHeading {
+            h1 {
+                font-size: 3rem;
+            }
+
+            .uvIntroHeading {
+                font-size: 2.5rem;
+            }
+
+            .uvIntro p {
+                font-size: 1.8rem;
+            }
+
+            .uvIntro .teamImage1 img {
+                max-width: 350px; /* Further scaling for larger screens */
+                height: auto;
+            }
+        }
+    }
+}

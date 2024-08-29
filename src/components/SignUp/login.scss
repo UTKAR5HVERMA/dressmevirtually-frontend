@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap');
+
+:root{
+    
+    --charcolBlack: #101820;
+    --primaryColoraText: #FEE715;
+    --primaryColorlight:  #00FFFF;
+    --inputText: hsl(330,12%, 97%);
+    --cardColor: hsl(300, 3%,94%);
+    --greyText: hsl(0,0%,51%);
+    --formcolor: #F9E795;
+    --bgColor: hsl(0,0%, 100%);
+    --whiteColor: hsl(0,0%, 100%);
+
+    --biggestFontSize: 2.5rem;
+    --h1Fontsize: 2rem;
+    --h2Fontsize: 1.25rem;
+    --h3Fontsize: 1rem;
+    --normalFontsize: 0.938rem;
+    --smallFontsize: 0.813rem;
+    --smallestFontsize: 0.75rem;
+    --borderRadius: 3rem;
+}
+
+
+.Fullpage{
+    // background-image: linear-gradient(rgb(130, 123, 123),rgb(18, 64, 59));
+    .toogle{
+        // display: none;
+        .signIn{
+            display:flex;
+            margin-left:50px;
+            justify-content: center;
+            .contentPage{
+            margin-top:100px ;    
+            // padding-bottom: 10px;
+            // border: 5px solid var(--primaryColoraText);
+            h2{
+                // color: ;
+                margin-right: 3rem;
+                text-align: center;
+            }
+            .page{
+                // display: flex;
+                padding-bottom: 50px;
+                padding-top: 50px;
+                justify-content: center;
+                color: var(--primaryColoraText);
+                p{
+                    // background-color: var(--cardColor);
+                    padding-top: 10px;
+                    margin-left: 1.5rem;
+                    font-size: var(--h3Fontsize);
+                    color: var(--charcolBlack);
+                    span{
+                        margin-left: 5px;
+                        font-weight:500 ;
+                        font-size:var(--h2Fontsize) ;
+                        color: var(--primaryColoraText);
+                    }
+                }
+                .secHeading{
+                    font-size: var(--h3Fontsize);
+                    color: #101820;
+                    padding-right: 3rem;
+                }
+                input{
+                    background: var(--cardColor);
+                    width: 100%;
+                    padding: 1rem;
+                    margin-top: .5rem;
+                    // margin-bottom: 1rem;
+                    border: none;
+                    outline: none;
+                    border-radius: var(--borderRadius);
+                    &::placeholder{
+                        font-size:var(--smallestFontsize) ;
+                        color:black;
+                    }
+                }
+            
+                }
+            }
+        }
+    }
+    .signUp{
+      
+            display:flex;
+            margin-left:50px;
+            justify-content: center;
+            .contentPage{
+            margin-top:100px ;    
+            // padding-bottom: 10px;
+            // border: 5px solid var(--primaryColoraText);
+            h2{
+                margin-right: 3rem;
+                text-align: center;
+            }
+            .page{
+                // display: flex;
+                padding-bottom: 50px;
+                padding-top: 50px;
+                justify-content: center;
+                color: var(--primaryColoraText);
+                p{
+                    // background-color: var(--cardColor);
+                    padding-top: 10px;
+                    margin-left: 1.5rem;
+                    font-size: var(--h3Fontsize);
+                    color: var(--charcolBlack);
+                    span{
+                        margin-left: 5px;
+                        font-weight:500 ;
+                        font-size:var(--h2Fontsize) ;
+                        color: var(--primaryColoraText);
+                    }
+                }
+                .secHeading{
+                    font-size: var(--h3Fontsize);
+                    color: #101820;
+                    padding-right: 3rem;
+                }
+                input{
+                    background: var(--cardColor);
+                    width: 100%;
+                    padding: .5rem;
+                    margin-top: .5rem;
+                    // margin-bottom: 1rem;
+                    border: none;
+                    outline: none;
+                    border-radius: var(--borderRadius);
+                    &::placeholder{
+                        font-size:var(--smallestFontsize) ;
+                        color:black;
+                    }
+                }
+            
+                }
+            }
+       
+       
+       
+}
+.pt{
+    cursor: pointer;
+}
+.pt:hover{   
+    color:var(--primaryColorlight) ;
+}
+}
+
+
+@media screen and (max-width:2560px ){
+    .Fullpage{
+        .signIn{
+            padding-top:50px ;
+            // margin-top: 500px;
+        } 
+        .signUp{
+            
+            padding-top:50px ;
+        // margin-top: 500px;
+    } 
+    }
+}

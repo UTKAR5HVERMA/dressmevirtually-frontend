@@ -1,1 +1,140 @@
-/*# sourceMappingURL=login.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+:root {
+  --charcolBlack: #101820;
+  --primaryColoraText: #FEE715;
+  --primaryColorlight: #00FFFF;
+  --inputText: hsl(330,12%, 97%);
+  --cardColor: hsl(300, 3%,94%);
+  --greyText: hsl(0,0%,51%);
+  --formcolor: #F9E795;
+  --bgColor: hsl(0,0%, 100%);
+  --whiteColor: hsl(0,0%, 100%);
+  --biggestFontSize: 2.5rem;
+  --h1Fontsize: 2rem;
+  --h2Fontsize: 1.25rem;
+  --h3Fontsize: 1rem;
+  --normalFontsize: 0.938rem;
+  --smallFontsize: 0.813rem;
+  --smallestFontsize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.Fullpage .toogle .signIn {
+  display: flex;
+  margin-left: 50px;
+  justify-content: center;
+}
+.Fullpage .toogle .signIn .contentPage {
+  margin-top: 100px;
+}
+.Fullpage .toogle .signIn .contentPage h2 {
+  margin-right: 3rem;
+  text-align: center;
+}
+.Fullpage .toogle .signIn .contentPage .page {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  justify-content: center;
+  color: var(--primaryColoraText);
+}
+.Fullpage .toogle .signIn .contentPage .page p {
+  padding-top: 10px;
+  margin-left: 1.5rem;
+  font-size: var(--h3Fontsize);
+  color: var(--charcolBlack);
+}
+.Fullpage .toogle .signIn .contentPage .page p span {
+  margin-left: 5px;
+  font-weight: 500;
+  font-size: var(--h2Fontsize);
+  color: var(--primaryColoraText);
+}
+.Fullpage .toogle .signIn .contentPage .page .secHeading {
+  font-size: var(--h3Fontsize);
+  color: #101820;
+  padding-right: 3rem;
+}
+.Fullpage .toogle .signIn .contentPage .page input {
+  background: var(--cardColor);
+  width: 100%;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: var(--borderRadius);
+}
+.Fullpage .toogle .signIn .contentPage .page input::-moz-placeholder {
+  font-size: var(--smallestFontsize);
+  color: black;
+}
+.Fullpage .toogle .signIn .contentPage .page input::placeholder {
+  font-size: var(--smallestFontsize);
+  color: black;
+}
+.Fullpage .signUp {
+  display: flex;
+  margin-left: 50px;
+  justify-content: center;
+}
+.Fullpage .signUp .contentPage {
+  margin-top: 100px;
+}
+.Fullpage .signUp .contentPage h2 {
+  margin-right: 3rem;
+  text-align: center;
+}
+.Fullpage .signUp .contentPage .page {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  justify-content: center;
+  color: var(--primaryColoraText);
+}
+.Fullpage .signUp .contentPage .page p {
+  padding-top: 10px;
+  margin-left: 1.5rem;
+  font-size: var(--h3Fontsize);
+  color: var(--charcolBlack);
+}
+.Fullpage .signUp .contentPage .page p span {
+  margin-left: 5px;
+  font-weight: 500;
+  font-size: var(--h2Fontsize);
+  color: var(--primaryColoraText);
+}
+.Fullpage .signUp .contentPage .page .secHeading {
+  font-size: var(--h3Fontsize);
+  color: #101820;
+  padding-right: 3rem;
+}
+.Fullpage .signUp .contentPage .page input {
+  background: var(--cardColor);
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: var(--borderRadius);
+}
+.Fullpage .signUp .contentPage .page input::-moz-placeholder {
+  font-size: var(--smallestFontsize);
+  color: black;
+}
+.Fullpage .signUp .contentPage .page input::placeholder {
+  font-size: var(--smallestFontsize);
+  color: black;
+}
+.Fullpage .pt {
+  cursor: pointer;
+}
+.Fullpage .pt:hover {
+  color: var(--primaryColorlight);
+}
+
+@media screen and (max-width: 2560px) {
+  .Fullpage .signIn {
+    padding-top: 50px;
+  }
+  .Fullpage .signUp {
+    padding-top: 50px;
+  }
+}/*# sourceMappingURL=login.css.map */

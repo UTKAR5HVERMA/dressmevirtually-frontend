@@ -2,6 +2,7 @@
 root {
   --charcolBlack: #101820;
   --primaryColoraText: #FEE715;
+  --primaryColorBacklight: #fee71550;
   --primaryColorlight: #00FFFF;
   --inputText: hsl(330,12%, 97%);
   --cardColor: hsl(300, 3%,94%);
@@ -24,27 +25,29 @@ root {
   height: 100%;
   top: 30%;
   bottom: 50%;
-  color: var(--primaryColoraText);
+  color: black;
   padding: 0 1.3rem;
-  background-color: black;
 }
 .vrAdDesign .text1 {
-  font-size: var(--biggestFontSize);
-  font-weight: 900;
+  background-color: var(--primaryColorBacklight);
+  padding: 1rem;
+  margin: 1rem -1rem 1rem -1rem;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
-.vrAdDesign p {
-  padding: -2rem 0;
+.vrAdDesign .grid-container p {
+  padding: 1rem;
+  border-radius: 0 0 20px 20px;
   font-size: var(--normalFontsize);
   font-weight: 500;
 }
-.vrAdDesign .product-box {
+.vrAdDesign .grid-container .product-box {
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 1.5rem 2rem;
-  border: 1.5px solid var(--primaryColoraText);
-  background: var(--charcolBlack);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   max-width: 500px;
@@ -52,11 +55,113 @@ root {
   padding-top: 1px;
   padding-bottom: 1px;
   margin: 1px; /* Center the box horizontally */
-  text-align: left;
 }
+.vrAdDesign .grid-container .product-box-video {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  max-width: 500px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin: 1px; /* Center the box horizontally */
+}
+.vrAdDesign .grid-container video {
+  padding-top: 5px;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 1px;
+  border-radius: 20px 20px 0 0;
+}
+
 @media screen and (max-width: 767px) {
-  .vrAdDesign .product-box {
+  .grid-container .product-box {
     padding-top: 5px;
     margin: 1px;
+  }
+  .grid-container p {
+    background-color: var(--cardColor);
+  }
+}
+@media screen and (max-width: 767px) {
+  .vrAdDesign .grid-container .product-box-video {
+    padding-top: 5px;
+    margin: 1px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .vrAdDesign .text1 {
+    text-align: center;
+    justify-content: center;
+    background-color: var(--primaryColorBacklight);
+    padding: 1rem;
+    margin: 1rem -rem 1rem -1rem;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .vrAdDesign .grid-container {
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    gap: 1px;
+  }
+  .vrAdDesign .grid-container .product-box {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    max-width: 500px;
+    height: 200px;
+    padding-top: 5px;
+    padding-bottom: 1px;
+    margin: 1px; /* Center the box horizontally */
+  }
+  .vrAdDesign .grid-container p {
+    padding-left: 2rem;
+    margin-left: 1px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: var(--h2Fontsize);
+    font-weight: 500;
+  }
+  .vrAdDesign .grid-container .product-box-video {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    max-width: 500px;
+    height: 200px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 1px; /* Center the box horizontally */
+  }
+  .vrAdDesign .grid-container video {
+    padding-top: 4px;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    border-radius: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .vrAdDesign .text1 {
+    font-size: var(--biggestFontSize);
+    font-weight: 800;
+  }
+  .vrAdDesign .grid-container p {
+    text-align: center;
+  }
+  .vrAdDesign .grid-container .product-box-video video {
+    border-radius: 20px;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 10%;
   }
 }/*# sourceMappingURL=Middle.css.map */

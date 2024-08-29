@@ -1,1 +1,252 @@
-/*# sourceMappingURL=About.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+:root {
+  --charcolBlack: #101820;
+  --primaryColoraText: #FEE715;
+  --primaryColorlight: #00FFFF;
+  --inputText: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --greyText: hsl(0, 0%, 51%);
+  --formcolor: #F9E795;
+  --bgColor: hsl(0, 0%, 100%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --biggestFontSize: 2.5rem;
+  --h1Fontsize: 2rem;
+  --h2Fontsize: 1.5rem;
+  --h3Fontsize: 1rem;
+  --normalFontsize: 0.938rem;
+  --smallFontsize: 0.813rem;
+  --smallestFontsize: 0.75rem;
+  --borderRadius: 3rem;
+  --blurBackground: rgba(0, 0, 0, 0.5);
+}
+
+.AboutPage {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  top: 0;
+  background-color: rgb(25, 25, 25);
+  padding: 2rem;
+}
+.AboutPage .secHeading {
+  text-align: center;
+  padding-top: 8rem;
+  font-size: var(--h2Fontsize);
+  color: var(--primaryColoraText);
+}
+.AboutPage .secHeading span {
+  color: var(--primaryColorlight);
+}
+.AboutPage .colabImage img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.AboutPage .collabDetail {
+  border-radius: 10px;
+  padding-top: 3rem;
+  text-align: center;
+}
+.AboutPage .collabDetail h1 {
+  text-align: center;
+  color: var(--primaryColoraText);
+}
+.AboutPage .collabDetail h1 span {
+  color: var(--primaryColorlight);
+}
+.AboutPage .collabDetail p {
+  padding-top: 1rem;
+  font-size: var(--h3Fontsize);
+  text-align: left;
+  color: var(--whiteColor);
+}
+.AboutPage .teamHeading {
+  padding-top: 2rem;
+  border: 2px solid var(--primaryColorlight);
+  border-radius: 20px;
+  background: var(--blurBackground);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+}
+.AboutPage .teamHeading h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--primaryColoraText);
+  font-size: var(--h1Fontsize);
+}
+.AboutPage .teamHeading h2 {
+  text-align: left;
+  color: var(--primaryColorlight);
+  font-size: var(--h2Fontsize);
+}
+.AboutPage .teamHeading p {
+  padding-bottom: 1rem;
+  font-size: var(--h3Fontsize);
+  text-align: left;
+  color: var(--whiteColor);
+}
+.AboutPage .teamHeading .uvIntroHeading {
+  padding-bottom: 1rem;
+  color: var(--primaryColoraText);
+  font-size: var(--h2Fontsize);
+}
+.AboutPage .teamHeading .uvIntro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  text-align: left;
+}
+.AboutPage .teamHeading .uvIntro .teamImage1 {
+  display: flex;
+  justify-content: flex-end;
+}
+.AboutPage .teamHeading .uvIntro .teamImage1 img {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+.AboutPage .contactForCollab {
+  padding: 1rem;
+  color: var(--whiteColor);
+}
+.AboutPage .contactForCollab h1 {
+  text-align: center;
+  padding: 0.5rem;
+  color: var(--primaryColorlight);
+}
+.AboutPage .contactForCollab h2 {
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.AboutPage .contactForCollab a {
+  font-size: var(--h2Fontsize);
+  color: var(--charcolBlack);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  background-color: var(--primaryColoraText);
+}
+.AboutPage .contactForCollab a:hover {
+  animation-duration: 200ms;
+  background-color: var(--primaryColorlight);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 425px) {
+  .AboutPage .secHeading {
+    padding-top: 5rem;
+    font-size: 1.5rem;
+  }
+  .AboutPage .collabDetail {
+    padding-top: 2rem;
+  }
+  .AboutPage .teamHeading .uvIntro {
+    grid-template-columns: 1fr;
+  }
+  .AboutPage .teamHeading .uvIntro .teamImage1 img {
+    max-width: 200px; /* Adjusts with text scaling */
+  }
+}
+@media screen and (min-width: 768px) {
+  .AboutPage .secHeading {
+    padding-top: 10rem;
+    font-size: 2rem;
+  }
+  .AboutPage .collabDetail p {
+    font-size: 1rem;
+  }
+  .AboutPage .teamHeading {
+    border-width: 3px;
+    padding: 3rem;
+  }
+  .AboutPage .teamHeading h1 {
+    font-size: 2.5rem;
+  }
+  .AboutPage .teamHeading .uvIntroHeading {
+    font-size: 2rem;
+  }
+  .AboutPage .teamHeading .uvIntro p {
+    font-size: 1.2rem;
+  }
+  .AboutPage .teamHeading .uvIntro .teamImage1 img {
+    max-width: 250px; /* Adjust for tablet size */
+    height: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .AboutPage .secHeading {
+    padding-top: 12rem;
+    font-size: 2.5rem;
+  }
+  .AboutPage .collabDetail {
+    padding-top: 4rem;
+    font-size: 1.2rem;
+  }
+  .AboutPage .collabDetail p {
+    margin: 0 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .AboutPage .teamHeading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .AboutPage .teamHeading h1 {
+    text-align: center;
+  }
+  .AboutPage .teamHeading h2, .AboutPage .teamHeading p {
+    text-align: left;
+  }
+  .AboutPage .teamHeading .uvIntro {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+  }
+  .AboutPage .teamHeading .uvIntro .teamImage1 img {
+    max-width: 245px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .AboutPage .secHeading {
+    padding-top: 15rem;
+    font-size: 3rem;
+  }
+  .AboutPage .collabDetail {
+    padding-top: 6rem;
+  }
+  .AboutPage .collabDetail h1 {
+    font-size: 2.5rem;
+  }
+  .AboutPage .collabDetail p {
+    margin: 0 3rem;
+    font-size: 1.8rem;
+  }
+  .AboutPage .teamHeading h1 {
+    font-size: 3rem;
+  }
+  .AboutPage .teamHeading .uvIntroHeading {
+    font-size: 2.5rem;
+  }
+  .AboutPage .teamHeading .uvIntro p {
+    font-size: 1.8rem;
+  }
+  .AboutPage .teamHeading .uvIntro .teamImage1 img {
+    max-width: 350px; /* Further scaling for larger screens */
+    height: auto;
+  }
+}/*# sourceMappingURL=About.css.map */

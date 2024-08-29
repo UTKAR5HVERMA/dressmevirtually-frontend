@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap');
 
 
-:root{
-    
+:root {
+
     --charcolBlack: #101820;
+    --charcolBlacklight: #23282c8f;
     --primaryColoraText: #FEE715;
-    --primaryColorlight:  #00FFFF;
-    --inputText: hsl(330,12%, 97%);
-    --cardColor: hsl(300, 3%,94%);
-    --greyText: hsl(0,0%,51%);
+    --primaryColorBacklight: #fee71550;
+    --primaryColorlight: #00FFFF;
+    --inputText: hsl(330, 12%, 97%);
+    --cardColor: hsl(300, 3%, 94%);
+    --greyText: hsl(0, 0%, 51%);
     --formcolor: #F9E795;
-    --bgColor: hsl(0,0%, 100%);
-    --whiteColor: hsl(0,0%, 100%);
+    --bgColor: hsl(0, 0%, 100%);
+    --whiteColor: hsl(0, 0%, 100%);
 
     --biggestFontSize: 2.5rem;
     --h1Fontsize: 2rem;
@@ -23,8 +25,146 @@
     --borderRadius: 3rem;
 }
 
+.footer {
+    background-color: var(--cardColor);
+    padding: 2rem 0;
+
+    .secContainer {
+        gap: 1.5rem;
+        text-align: center;
+        align-items: flex-start;
+
+        .logoDiv {
+            .footerLogo {
+                display: flex;
+                color: black;
+                font-weight: 500;
+                cursor: pointer;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: .5rem;
+            }
+
+            h2 {
+                padding-bottom: 1rem;
+                font-weight: 500;
+            }
+
+            img.logodm {
+                display: flex;
+                cursor: pointer;
+                justify-content: center;
+                height: 50px;
+                width: 50px;
+            }
+
+        }
+
+        .socials {
+            gap: .5rem;
+            align-items: center;
+            margin: auto;
+            justify-content: center;
+
+            .icon {
+                font-size: 40px;
+                background-color: var(--primaryColoraText);
+                border-radius: 50%;
+                padding: 8px;
+                color: var(--whiteColor);
+
+                &:hover {
+                    background: var(--primaryColorlight);
+                }
+            }
+        }
+
+        .footerLinks {
+            display: grid;
+            row-gap: .2rem;
+
+            .linkTitle {
+                padding-bottom: .5rem;
+                color: black;
+                font-weight: 700;
+
+            }
+
+            li {
+                &:hover {
+                    transform: translate(10px);
+
+                    a {
+                        color: black;
+                    }
+                }
+            }
+
+            a,
+            .phone,
+            .email {
+                color: black;
+                font-size: 13px;
+                font-weight: 500;
+            }
+        }
+    }
 
 
-h1{
-    font-size: 100px;
+}
+
+// /* Media Query for screens smaller than 768px */
+// @media (max-width: 768px) {
+//     .secContainer {
+//         flex-direction: column;
+//         align-items: center;
+//     }
+
+//     .footerLinks {
+//         text-align: center;
+//     }
+// }
+
+// /* Media Query for screens larger than 768px */
+// @media (min-width: 768px) {
+//     .secContainer {
+//         flex-direction: row;
+//         justify-content: space-between;
+//         align-items: flex-end;
+//     }
+
+//     .footerLinks {
+//         text-align: left;
+//     }
+// }
+
+// /* Media Query for screens larger than 1024px */
+// @media (min-width: 1024px) {
+//     .secContainer {
+//         gap: 2rem;
+//     }
+// }
+
+@media (min-width: 768px) {
+    .botom {
+        
+        display: flex;
+        // justify-items: center;
+        justify-content: space-between;
+
+        .info {
+
+            padding-left: 100px;
+        }
+
+        .helpful {
+           padding-left: 70px;
+
+        }
+
+        .details {
+
+            padding-right: 100px;
+        }
+    }
 }

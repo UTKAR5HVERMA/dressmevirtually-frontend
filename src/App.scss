@@ -30,8 +30,15 @@ root{
 
 body{
     background: var(--bgColor);
-
     
+
+}
+.bar{
+    color: var(--primaryColoraText);
+    &:hover{
+        color: var(--primaryColorlight);
+        // border-bottom: 1.5px solid var(--primaryColoraText);
+    }
 }
 .flex{
         display: flex;
