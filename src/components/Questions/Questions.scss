@@ -5,9 +5,13 @@
     
     --charcolBlack: #101820;
     --primaryColoraText: #FEE715;
+<<<<<<< HEAD
 
     --primaryColorBacklight:  #fee71550;
 
+=======
+    --primaryColorBacklight:  #fee71550;
+>>>>>>> e240c4519d9bba51b368e2b1707b73a06f3dcb6b
     --primaryColorlight:  #00FFFF;
     --inputText: hsl(330,12%, 97%);
     --cardColor: hsl(300, 3%,94%);
@@ -26,10 +30,13 @@
     --borderRadius: 3rem;
 }
 .questions{
+<<<<<<< HEAD
 
 
     .submitbtn{
 
+=======
+>>>>>>> e240c4519d9bba51b368e2b1707b73a06f3dcb6b
     .secHeading{
         h3,h4{
             padding-bottom: 1.5rem;
@@ -46,7 +53,32 @@
                }
            }  
     }
+<<<<<<< HEAD
     .submitbtn{
+=======
+  .form{
+      .formContent{  
+        gap: 1rem;
+        input, textarea{
+              background: var(--cardColor);
+              width: 100%;
+              padding: 1rem;
+              border: none;
+              outline: none;
+              border-radius: var(--borderRadius);
+              &::placeholder{
+                font-size:var(--smallestFontsize) ;
+                color:black;
+              }
+            }
+            textarea{
+              height: 100px;
+               border-radius: 10px;       
+              }
+        }
+    }
+        .submitbtn{
+>>>>>>> e240c4519d9bba51b368e2b1707b73a06f3dcb6b
         background-color: var(--primaryColoraText);
         color: var(--charcolBlack);
         
@@ -56,8 +88,11 @@
         background: var(--primaryColorlight);
     }
     
+<<<<<<< HEAD
     
     
+=======
+>>>>>>> e240c4519d9bba51b368e2b1707b73a06f3dcb6b
 }
 .form{
     .formContent{  
@@ -139,4 +174,8 @@
     .show{
         height: 150px;
     }
+<<<<<<< HEAD
 }}
+=======
+}
+>>>>>>> e240c4519d9bba51b368e2b1707b73a06f3dcb6b
