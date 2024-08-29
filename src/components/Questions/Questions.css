@@ -20,11 +20,9 @@
   --borderRadius: 3rem;
 }
 
-<<<<<<< HEAD
-.questions .submitbtn .secHeading h3, .questions .submitbtn .secHeading h4 {
-=======
+
 .questions .secHeading h3, .questions .secHeading h4 {
->>>>>>> e240c4519d9bba51b368e2b1707b73a06f3dcb6b
+
   padding-bottom: 1.5rem;
 }
 .questions .submitbtn .secHeading p {
@@ -73,9 +71,6 @@
   height: 100px;
   border-radius: 10px;
 }
-<<<<<<< HEAD
-.questions .accordionContainer .title {
-=======
 .questions .submitbtn {
   background-color: var(--primaryColoraText);
   color: var(--charcolBlack);
@@ -86,7 +81,6 @@
 }
 
 .accordionContainer .title {
->>>>>>> e240c4519d9bba51b368e2b1707b73a06f3dcb6b
   font-size: var(--normalFontsize);
   align-items: center;
   padding: 1rem;
